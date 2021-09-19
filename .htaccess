@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /villamerah
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /villamerah/index.php/$1 [L]
+
+ErrorDocument 404 /villamerah/index.php
